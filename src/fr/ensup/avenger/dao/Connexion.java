@@ -12,8 +12,8 @@ public class Connexion {
 	private static Statement statement = null;
 
 	/**
-	 * @return Cette méthode permet la connexion de l'application à la base de
-	 *         donnée
+	 * @return Cette mï¿½thode permet la connexion de l'application ï¿½ la base de
+	 *         donnï¿½e
 	 * @throws SQLException 
 	 */
 	public static Statement getConnection() throws SQLException {
@@ -24,6 +24,9 @@ public class Connexion {
 						.getConnection("jdbc:mysql://localhost/projetjframe?user=root&password=");
 				statement = connect.createStatement();
 
+				
+				
+				
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				System.out.println(e);
@@ -35,7 +38,7 @@ public class Connexion {
 		return statement;
 	}
 	/**
-	 * Méthode permettant de fermer la connexion
+	 * Mï¿½thode permettant de fermer la connexion
 	 */
 	public static void closeConnection() {
 		try {
